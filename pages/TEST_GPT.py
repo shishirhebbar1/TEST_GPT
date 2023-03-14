@@ -1,10 +1,6 @@
 import os
 import openai
 import streamlit as st
-from Google import Create_Service
-import base64
-from email.mime.text import MIMEText
-from email.mime.multipart import MIMEMultipart
 st.title("TEST GPT")
 # Load your API key from an environment variable or secret management service
 openai.api_key ="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"
