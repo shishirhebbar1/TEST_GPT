@@ -6,7 +6,7 @@ st.title("TEST GPT")
 openai.api_key ="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"
 prompt=st.text_input("WHAT WOULD YOU LIKE US TO DO : ")
 if st.button('CLICK'):
-    response = openai.Completion.create(model="text-davinci-003", prompt=prompt, temperature=0, max_tokens=1000)
+    response = openai.Completion.create(model="text-davinci-003", prompt=prompt, temperature=0, max_tokens=4000)
     a=response["choices"]
     b=a[0]
     st.write(b["text"])
